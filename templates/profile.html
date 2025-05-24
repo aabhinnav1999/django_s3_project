@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ user.username }}'s Profile</title>
+</head>
+<body>
+    <h2>Welcome, {{ user.username }}</h2>
+
+    {% if profile_pic_url %}
+        <img src="{{ profile_pic_url }}" alt="Profile Picture" width="200"><br>
+        <a href="{% url 'delete_picture' %}">Delete Picture</a>
+    {% else %}
+        <p>No profile picture uploaded.</p>
+    {% endif %}
+
+    <br><br>
+    <a href="{% url 'upload_picture' %}">Upload New Picture</a><br>
+    <a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>
