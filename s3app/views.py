@@ -66,9 +66,6 @@ def logout_view(request):
 def get_s3_client():
     return boto3.client(
         's3',
-        aws_access_key_id=settings.AWS_ACCESS_KEY_ID,
-        aws_secret_access_key=settings.AWS_SECRET_ACCESS_KEY,
-        aws_session_token=settings.AWS_SESSION_TOKEN,
         region_name=settings.AWS_S3_REGION_NAME
     )
 

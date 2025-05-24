@@ -123,9 +123,10 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AWS_ACCESS_KEY_ID = os.getenv('aws_access_key_id')
-AWS_SECRET_ACCESS_KEY = os.getenv('aws_secret_access_key')
-AWS_SESSION_TOKEN = os.getenv('aws_session_token')
+# AWS_ACCESS_KEY_ID = os.getenv('aws_access_key_id')
+# AWS_SECRET_ACCESS_KEY = os.getenv('aws_secret_access_key')
+# AWS_SESSION_TOKEN = os.getenv('aws_session_token')
+
 AWS_STORAGE_BUCKET_NAME = 'clouddevops-assets'
 AWS_S3_REGION_NAME = 'eu-west-1'
 AWS_S3_ADDRESSING_STYLE = "virtual" 
